@@ -2,4 +2,24 @@ body {
     background-color: #1d653f;
     font: 15px arial, sans-serif;
     color: black;
+    margin: 25px 25px 75px;
+}
+
+a {
+    color: #1D9599;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8DCACC;
+}
+
+h1, h2 {
+    color: black;
+}
+
+.post {
+    background-color: #164D30;
+    padding: 10px 25px 10px;
+    margin: 25px 0px 25px;
 }
