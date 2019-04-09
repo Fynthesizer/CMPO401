@@ -10,6 +10,29 @@
 <a href="https://www.tumblr.com/blog/finnma-mddn343">Original Development Blog</a> <br>
 
 <div class="post">
+    <h5>April 9, 2019</h5>
+    <h2>Testing Adaptive Music System</h2>
+    <p>I've implemented an audio system to the game which controls the levels of tracks based on whether or not gravity is currently altered. In order to test the system I composed a short loop which represents the general direction I'm thinking of going with the music. The loop is split into two tracks: a base layer which contains the instruments that will be heard during standard gameplay, and an additional layer which is overlaid while gravity has been reoriented.</p>
+    <p><b>Base Layer (Natural Gravity)</b></p>
+    <audio controls>
+        <source src="assets/reoWeekTestTrackBase.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio> 
+    <p><b>Additional Layer (Reoriented Gravity)</b></p>
+    <audio controls>
+        <source src="assets/reoWeekTestTrackLayer.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio> 
+    <p>This track is mostly just for testing purposes, although it represents a few of the qualities which I'm aiming for:</p>
+    <ul>
+        <li>The base layer should work well on its own, but should also work with the additional layer.</li>
+        <li>The base layer should generally be sparse and ambient, without any strong pulse.</li>
+        <li>The additional layer should introduce a more defined rhythm to the music.</li>
+    </ul> 
+    <p>When playing the game with this test track implemented, I did feel that the heavy synth bass was a bit cheesy. Since the player will likely be switching between natural gravity and reoriented gravity quite frequently, the instrumentation changes run the risk of being distracting or even annoying while playing. Moving forward I will try experimenting with more subtle layering. </p>
+</div>
+    
+<div class="post">
     <h5>April 4, 2019</h5>
     <h2>Initial Thoughts and Planning</h2>
     <p>I first began working on Reorientation Week (still a working title) in 2018 as a project for my computer game design class. It was selected as one of the ten or so games that would be assigned a team to continue working on it for the following project. In this team I mostly focussed on coding and general directing. From the start, I had also intended to create a soundtrack for the game, however time constraints unfortunately meant I was only able to do some sound effect work. Now that I am returning to this project, I plan on redoing most of the sound effects, as well as creating multiple tracks for the game. </p>
@@ -17,5 +40,7 @@
     <p>The atmosphere of the game is pretty mysterious and otherworldly. I took a lot of inspiration from the shrines in The Legend of Zelda: Breath of the Wild. To capture the ethereal quality of the game I plan on making heavy use of synth sounds. My plan is to attempt to create most, if not all, the games music and sound effects using my Korg Prologue analog synthesizer. </p>
     <p>The unique gameplay of Reorientation Week allows me to experiement with new ways of incorporating music into games. I'm super pumped to see how it turns out. </p>
 </div>
+    
+
 </body>
 </html> 
