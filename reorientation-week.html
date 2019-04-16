@@ -9,18 +9,64 @@
 <p>Description: Reorientation Week is a first-person puzzle platformer which revolves around the core mechanic of changing the direction of gravity. The player is able to point their crosshair in any direction and, upon clicking, redirect gravity so that "down" is now the direction in which they clicked. In order to progress through the game, the player must solve puzzles and complete platforming segments which utilize this gravity-change mechanic.</p>
 <a href="https://www.tumblr.com/blog/finnma-mddn343">Original Development Blog</a> <br>
 
+    
+<div class="post">
+    <h5>April 11, 2019</h5>
+    <h2>Falling Noise</h2>
+    <p>This noise was surprisingly difficult to get sound right. The volume of this noise loop is controlled by the player's velocity. Since the player can die from falling too far, the noise is necessary to let the player know whether they've fucked up.</p>
+    <p>To try and simulate the sound of wind, I started with white noise recorded from the Prologue. I then EQ'd out some of the highs, boosted the lows, and added some resonance. To create stereo width I recorded some more noise and panned both noise tracks to opposite sides. The result was a pretty sterile wind sound:</p>
+    <audio controls>
+        <source src="assets/reoweekFallingv1.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio> 
+    <p>To create more organic movement, I added a frequency shifter, and added some random modulation to the frequency. The change is subtle, but feels a lot more natural:</p>
+    <audio controls>
+        <source src="assets/reoweekFalling.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio> 
+</div>
+    
+<div class="post">
+    <h5>April 11, 2019</h5>
+    <h2>Gravity Gun Sounds</h2>
+    <p>A lot of sound effects for the game were made last year for the prototype. With this project I want to try and replace any sounds I've already made, to try and form more of a consistent sonic aesthetic. I've begun by working on the sound effects for the gravity gun, probably the most important sounds in the game. All audio for these sounds was recorded from the Prologue, with some DSP applied in Ableton.</p>
+    <p><b>Reorient</b></p>
+    <audio controls>
+        <source src="assets/reoweekReorient.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio> 
+    <p>This is the sound which plays whenever the player successfully changes the direction of gravity. I wanted it to have a massive impact, to make the player feel empowered. The sound has three layers:</p>
+    <ol>
+      <li>The Charge: This is the sound produced by the gun just before firing. Originally this part was excluded, however I felt that the moment of impact would be more effective with a short lead-in. This sound is simply an oscillator rising in pitch, creating the effect that the gun is charging up. </li>
+      <li>The Drop: This is the body of the sound. It's essentially just a sine wave dropping in pitch, with some added effects.</li>
+      <li>The Tail: This part fades in as the drop is fading out. I wanted to create the effect that the gravity change was rippling through the environment. The sound is a noise oscillator which has its cutoff frequency modulated by a square wave. </li>
+    </ol>
+    <p><b>Reset</b></p>
+    <audio controls>
+        <source src="assets/reoweekReset.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio> 
+    <p>This sound plays when the player resets gravity to its original state by clicking the right mouse button. It is similar to the charge part of the Reorient sound effect, but with the oscillator decreasing in pitch instead of increasing, representing a return to normality.</p>
+    <p><b>Fail</b></p>
+    <audio controls>
+        <source src="assets/reoweekFail.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio> 
+    <p>This is the sound for when the player attempts to reorient gravity but cannot do so. This can be for various reasons, such as the player running out of charges. I experimented with various patterns for this sound, but found that the universally accepted "du duh" worked best. </p>
+</div>
+    
 <div class="post">
     <h5>April 9, 2019</h5>
     <h2>Testing Adaptive Music System</h2>
     <p>I've implemented an audio system to the game which controls the levels of tracks based on whether or not gravity is currently altered. In order to test the system I composed a short loop which represents the general direction I'm thinking of going with the music. The loop is split into two tracks: a base layer which contains the instruments that will be heard during standard gameplay, and an additional layer which is overlaid while gravity has been reoriented.</p>
     <p><b>Base Layer (Natural Gravity)</b></p>
     <audio controls>
-        <source src="assets/reoWeekTestTrackBase.wav" type="audio/wav">
+        <source src="assets/reoweekTestTrackBase.wav" type="audio/wav">
         Your browser does not support the audio element.
     </audio> 
     <p><b>Additional Layer (Reoriented Gravity)</b></p>
     <audio controls>
-        <source src="assets/reoWeekTestTrackLayer.wav" type="audio/wav">
+        <source src="assets/reoweekTestTrackLayer.wav" type="audio/wav">
         Your browser does not support the audio element.
     </audio> 
     <p>This track is mostly just for testing purposes, although it represents a few of the qualities which I'm aiming for:</p>
