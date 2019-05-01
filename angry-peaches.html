@@ -1,0 +1,96 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="header" style="background-image:url('assets/angrypeachesHeader.png');">
+    <div class="headerText">
+        
+        <a href="index.html">Back</a>
+        <h1>Angry Peaches</h1>
+    </div>
+    
+</div>
+
+<div class="content">
+<p><strong>Producer: </strong>Zala Habib</p>
+<p>Angry Peaches is a 2 player competitive fighting commisioned by Garage Project and Bar SK.</p>
+    
+<a href="assets/Angry%20Peaches.zip">Download</a>
+
+<div class="post">
+    <h5>April 27, 2019</h5>
+    <h2>Jump and Dunk</h2>
+    <p>The final two sound effects I ending up adding were for jumping and dunking. While these weren't what Zala had originally asked for I feel like they do a lot to enhance the feel of the game.</p>
+    <h3>Jump</h3>
+    <audio controls>
+        <source src="assets/angrypeachesJump.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio> 
+    <p></p>
+    <h3>Dunk</h3>
+    <audio controls>
+        <source src="assets/angrypeachesDunk.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio> 
+    <p>I pitched the jump sound different for both players, which kind of gives the peaches different personalities.</p>
+    <p>I've also set the jump, dunk, and splatter sound effects to be panned depending on the player's location on screen.</p>
+</div>
+    
+<div class="post">
+    <h5>April 26, 2019</h5>
+    <h2>Music</h2>
+    <p>I'm super stoked with how this turned out. Since the game is pretty light-hearted and silly I knew I wanted to make the music super intense and cheesy to juxtapose against the gameplay. To capture the "angry" part of Angry Peaches as well as the 8-bit style of the game, I went for a fusion of metal and chiptune elements. </p>
+    <h3>Ballad of the Peaches</h3>
+    <audio controls>
+        <source src="assets/angrypeachesMusic.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio> 
+    <p>I started out this composition by coming up with the doofiest sounding melody I could think of. The start of this track is just this melody and some basic accompaniment in a fairly authentic NES style arrangement. I then went to see how could I take this cute melody and turn it into something "epic" sounding by introducing distorted guitar and heavy metal rhythms, as well as reharmonising the melody into its relative minor. Later in the song I experiment with time signature changes and different variations on the original melody.</p>
+    <p>Since I figured that a single fight wouldn't last longer than 2 minutes, this was around the length I aimed for with the track, trying to make sure that the music stays interesting. In the case that the fight lasts longer than this however I made sure to include a doofy ending which smoothly transitions back to the start of the song.</p>
+    <p>When adding this music into the game, I didn't want the music to play out while the game is just sitting on the menu screen. I only want the music to pick up once people are actually playing. To make sure of this, I coded it so that while the players are on the menu screen, the bassline at the start of the song will simply loop endlessly. After someone hits start, it will wait until the next bar to transition into the main melody.</p>
+    <p>Once one of the players has managed to destroy their enemy, the music will briefly cut out, before starting back up with the bassline.</p>
+</div>
+    
+<div class="post">
+    <h5>April 25, 2019</h5>
+    <h2>Splatter Sounds</h2>
+    <p>At this stage we only have a rough prototype of the game. I've started by making the splatter sounds for when the player's damage each other. My first thought for this sound effect was to buy some actual peaches and record the sound of them smashing into each other. However I figured the resulting sound probably wouldn't be that interesting and I really wanted something more exaggerated.</p>
+    <p>What I ended up doing was recording the sound of my notepad falling onto the floor. The way that the pages fold up after landing actually makes a pretty nasty sounding splatter.</p>
+    <h3>Original Recordings</h3>
+    <audio controls>
+        <source src="assets/angrypeachesSplattersDry.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio> 
+    <p>From here I started experimenting with audio effects to make the sound more aggressive. I added compression and EQ to fatten the sound up. After this, I added a bitcrusher effect to go with the 8-bit aesthetic of the game.</p>
+    <h3>Final Splatter Sounds</h3>
+    <audio controls>
+        <source src="assets/angrypeachesSplatters.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio> 
+</div>
+    
+<div class="post">
+    <h5>April 17, 2019</h5>
+    <h2>Game Summary</h2>
+    <p>For the NZ Games Festival, Garage Project and Bar SK have commissioned two games to be made, inspired by different Garage Project beers. These games will be available for anyone to play at Golding's Free Dive on the 28th of April (just 11 days from this date) for their event Play by Pint.</p>
+    <p>Zala is creating a game for this called Angry Peaches, inspired by the Garage Project beer of the same name. With such a short time frame, the game will have to be fairly simple. It will be a 2D fighting game where players each control a peach and must fight each other to the death. The controls will be as follows:</p>
+    <ul>
+        <li>Left and right to move side to side.</li>
+        <li>Up to jump in to the air.</li>
+        <li>Down to dunk towards the ground. This is how players will be able to damage their opponent.</li>
+    </ul>
+    <p>Sound design for this game should be relatively straight forward. Zala has asked me to produce the following:</p>
+    <ul>
+        <li>One music track</li>
+        <li>A hard splatter sound for when the peaches collide</li>
+        <li>A soft splatter sound for when the peach lands on the ground</li>
+    </ul>
+    <p>The game will feature retro-inspired pixel art and so I'm thinking of heading in a chiptune direction with the soundtrack.</p>
+</div>
+    
+    
+</body>
+</html> 
