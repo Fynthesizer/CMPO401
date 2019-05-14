@@ -48,6 +48,31 @@ h3 {
 
 audio {
     width: 100%;
+    margin-bottom: 10px;
+}
+
+iframe {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.tracksection {
+    background-color: #263033;
+    padding: 10px 25px 10px;
+    margin: 25px 0px 25px;
+    overflow: auto;
+    color: lightgrey;
+}
+
+.track{
+    width: 20%;
+    display: grid;
+    float: left;
+    margin-right: 25px;
+}
+
+.track p{
+    margin:0px;
 }
 
 .header {
@@ -65,7 +90,7 @@ audio {
 .headerText {
     position: absolute;
     left:25px;
-    bottom:25px;
+    bottom:5px;
 }
 
 .content {
@@ -133,4 +158,20 @@ audio {
 .bannertext a {
     display: block;
     margin-bottom: 0.2em;
+}
+
+.menu {
+    display: inline-block;
+    font-size: 20px;
+    float: left;
+    padding:0px;
+    margin:0px;
+}
+
+.menu p {
+    display: inline-block;
+    font-size: 20px;
+    float: left;
+    margin-right: 30px;
+    margin-top:0px;
 }
