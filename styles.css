@@ -1,7 +1,7 @@
 body {
-    background-color: #151B21;
+    background-color: #15191A;
     font: 15px arial, sans-serif;
-    color: black;
+    color: lightgrey;
     margin: 0px;
 }
 
@@ -19,17 +19,24 @@ h1 {
     padding: 0px;
     margin-bottom: 10px;
     margin-top: 10px;
+    color: white;
+}
+
+h2 {
+    color: white;
 }
 
 h3 {
     font-size:15px;
+    color: white;
 }
 
 .post {
-    background-color: #212933;
+    background-color: #263033;
     padding: 10px 25px 10px;
     margin: 25px 0px 25px;
     overflow: auto;
+    color: lightgrey;
 }
 
 .post img{
@@ -65,3 +72,65 @@ audio {
     margin:25px;
 }
 
+
+.banners {
+    display: flex;
+}
+
+.banner {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #263033;
+    position: relative;
+    flex: 33.33%;
+    padding: 10px;
+    margin-right: 10px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.banneroverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    color: white;
+}
+
+.banner:hover .banneroverlay {
+    opacity: 0.75;
+}
+.banner:hover .bannertext {
+    top:50%;
+    opacity: 1;
+}
+
+.bannertext {
+    display:block;
+    color: white;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: .5s ease;
+    opacity:0;
+}
+
+.bannertext h1 {
+    font-size: 25px;
+}
+
+.bannertext a {
+    display: block;
+    margin-bottom: 0.2em;
+}
