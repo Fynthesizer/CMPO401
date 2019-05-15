@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | AngryPeachesPC</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/webgl.json", {onProgress: UnityProgress});
+    </script>
+</head>
+
+<body>
+<div class="header" style="background-image:url('assets/angrypeachesHeader.png'); background-position:bottom;">
+    <div class="headerText">
+        <a href="index.html">Home</a>
+        <h1>Angry Peaches</h1>
+        <div class ="menu">
+            <p><a href = "angrypeaches-tracks.html">Tracks</a></p>
+            <p><a href = "angrypeaches-blog.html">Blog</a></p>
+            <p>Play</p>
+            <p><a href = "assets/Angry%20Peaches.zip">Download</a></p>
+        </div>
+    </div>
+    
+</div>
+
+<div class="content">
+    
+<div class="webgl-content">
+      <div id="unityContainer"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">Angry Peaches</div>
+      </div>
+    </div>
+</div>
+
+
+    
+</body>
+</html> 
