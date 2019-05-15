@@ -18,55 +18,83 @@
 </div>
 
 <div class="content">
-
+<div class="content">
+<p><strong>Producer: </strong>Finn Mitchell-Anyon (meee)</p>
+<p>Reorientation Week is a first-person puzzle platformer which revolves around the core mechanic of changing the direction of gravity. The player is able to point their crosshair in any direction and, upon clicking, redirect gravity so that "down" is now the direction in which they clicked. In order to progress through the game, the player must solve puzzles and complete platforming segments which utilize this gravity-change mechanic.</p>
 <div class="tracksection">
     <h2>Music</h2>
+    <p>The soundtrack for Reorientation Week is an experiment is "reactive music" - music which dynamically responds to the players actions in game. Like most of the sound effects, all instrumentation in the music was recorded from my Korg Prologue analog synthesizer. I was very much inspired by synthwave, complimenting the high tech futuristic aesthetic of the game. I also wanted the music to create a sense of mystery, as I think the game has a very mysterious and otherwordly atmosphere.</p>
+    <p>At the start of a level, the music is just a simple repeating synth bass note, along with some occasional spooky synth ambience. Each time the player sequentially changes the direction of gravity however, additional instruments are layered on, ramping up the intensity of the music and creating the feeling of entering an altered state of reality. Initially the player can only change the direction of gravity once before resetting it back to normal. However they can collect upgrades which allow them to reorient gravity more times before resetting, thus meaning that they also gain access to more of the full piece of music. Since gravity can only remain altered for a short period of time however, and since the full track is around 4 minutes long, the player can still only hear fragments of the full piece of music even after collecting all 3 upgrades.</p>
+    <ul>
+    <li>On the first reorientation, an arpeggiated synth is introduced, harmonising over top of the static bass line. Various different harmonies are explored throughout the track. To create a sense of disorientation, I have these arpeggios panning from left to right. </li>
+    <li>On the second reorientation, some fast-paced drums are introduced, heightening the intensity of the music. </li>
+    <li>On the third reorientation, a massive synth pad comes in, doubling up the harmonies created by the arpeggios. Also, the synth bass line starts following the harmony instead of staying on one note. <strong>There are some melodic motifs played by the pad which are hinted at in the "natural gravity" track.</strong> </li>
+    <li>On the fourth and final possible reorientation, some high end percussion comes in, just adding a little bit more intensity.</li>
+    </ul>
+    <p>Since the dynamics of the music are controlled by the player's actions, each version of the music has to be pretty dynamically flat. If there was a part in the full version of the track where the dynamics die down, then the music might not ramp up as much in intensity depending on where in the track the player reorients gravity.</p>
     <iframe width="100%" height="300" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/779443218&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 </div>
     
 <div class="tracksection">
     <h2>Gravity Gun</h2>
+    <p>The gravity gun is the tool which the player uses to change the direction of gravity. All sound effects for the gun were recorded from my Korg Prologue analog synthesizer. To create consistency between these sound I made sure to use the same timbre for all beeps and boops. </p>
     <div class="track">
-        <h3>Reorient Gravity</h3>
+        <h3>Reorient</h3>
         <audio controls>
             <source src="assets/reoweekReorient.wav" type="audio/wav">
         </audio> 
-        <p>Plays when the player changes the direction of gravity.</p>
+        <span class="description">
+            <strong>Purpose: </strong>Plays when the player successfully changes the direction of gravity. <br/>
+            <strong>Development: </strong>I wanted this sound effect to have a strong impact, to make the gravity switching mechanic feel empowering. To accomplish this I made the sound revolve around a massive sub drop. Just before the drop there is a short electronic charge up sound, which makes the drop feel more impactful. Then towards the end of the sound effect, there is a rippling noise wave which just adds a little bit more to the feeling of shifting the world around you.
+        </span>
     </div>
     <div class="track">
-        <h3>Reset Gravity</h3>
+        <h3>Reset</h3>
         <audio controls>
             <source src="assets/reoweekReset.wav" type="audio/wav">
         </audio> 
-        <p>Plays when gravity returns to its normal direction.</p>
+        <span class="description">
+            <strong>Purpose: </strong>Plays when gravity is returned to its normal state, either intentionally by the player, or as a result of the reorientation timer running out. <br/>
+            <strong>Development: </strong>This is very similar to the "charge up" part of the reorientation sound, although with the pitch descending instend of ascending to resprent a return to normality.
+        </span>
     </div>
     <div class="track">
         <h3>Fail to Reorient</h3>
         <audio controls>
             <source src="assets/reoweekFail.wav" type="audio/wav">
         </audio> 
-        <p>Plays when the player attempts to change gravity but cannot do so.</p>
+        <span class="description">
+            <strong>Purpose: </strong>Plays when the player attempts to reorient, but is prevented from doing so due to a variety of possible circumstances. <br/>
+            <strong>Development: </strong>This is a pretty classic "error" sound effect, essentially just a low pitched beep-beep.
+        </span>
     </div>
     <div class="track">
-        <h3>Timer Tick</h3>
+        <h3>Timer</h3>
         <audio controls>
             <source src="assets/reoweekTimer.wav" type="audio/wav">
         </audio> 
-        <p>Plays three times before the player runs out of reorientation time.</p>
+        <span class="description">
+            <strong>Purpose: </strong>The player can only keep gravity reoriented for a limited amount of time. This sound plays three times on the last three seconds before gravity will return to its normal state, reminding the player to get to a safe position. <br/>
+            <strong>Development: </strong>I wanted to make this sound simple and short, so as to not be too annoying or distracting.
+        </span>
     </div>
     <div class="track">
-        <h3>Upgrade Collect</h3>
-        <audio controls>
-            <source src="assets/reoweekUpgrade%20(1).wav" type="audio/wav">
-        </audio> 
-        <p>Plays when the player collects an upgrade, allowing them to reorient more times sequentially.</p>
+        <h3>Upgrade</h3>
+        <audio controls src="assets/reoweekUpgrade%20(1).wav" type="audio/wav"></audio> 
+        <audio controls src="assets/reoweekUpgrade%20(2).wav" type="audio/wav"></audio> 
+        <audio controls src="assets/reoweekUpgrade%20(3).wav" type="audio/wav"></audio> 
+        <span class="description">
+            <strong>Purpose: </strong>Plays when the player collects an upgrade, increasing the maximum number of times they can sequentially alter gravity.<br/>
+            <strong>Development: </strong>These sounds are all arpeggiated seventh chords. Each time the player collects another upgrade, the melody moves up a third. This is to create a sense of progression.
+        </span>
     </div>
 </div>
     
 <div class="tracksection">
     <h2>Drones</h2>
+    <p>In the game there are flying drone enemies which will patrol their area until they detect the player, after which they will attack.</p>
     <div class="track">
-        <h3>Chat</h3>
+        <h3>Chatting</h3>
         <audio controls>
             <source src="assets/reoweekDroneChat%20(1).wav" type="audio/wav">
         </audio> 
@@ -88,18 +116,75 @@
         <audio controls>
             <source src="assets/reoweekDroneChat%20(7).wav" type="audio/wav">
         </audio> 
+        <span class="description">
+            <strong>Purpose: </strong>While the drones are patrolling, they will talk to each other.<br/>
+            <strong>Development: </strong>I wanted to give these enemies some personality. To give the impression that they are having conversation, they will intermittently emit one of these seven "sentences". I created this talking synth effect by essentially just fiddling with the pitch wheel on the Prologue.
+        </span>
     </div>
     <div class="track">
-        <h3>Detect Player</h3>
+        <h3>Player Detected</h3>
         <audio controls>
             <source src="assets/reoweekDroneDetect.wav" type="audio/wav">
-        </audio> 
+        </audio>
+        <span class="description">
+            <strong>Purpose: </strong>The drones emit this sound when they detect the player.<br/>
+            <strong>Development: </strong>I wanted this sound to be similar to their normal conversation, although notably more angry.
+        </span>
     </div>
     <div class="track">
         <h3>Hovering</h3>
         <audio controls>
             <source src="assets/reoweekDroneHover.wav" type="audio/wav">
         </audio> 
+        <span class="description">
+            <strong>Purpose: </strong>This is the sound of the drone's propellor oscilating.<br/>
+            <strong>Development: </strong>This is one of a few sounds that was not recorded from the Prologue. The original recording was an electric shaver. I took it into Ableton and applied an LFO controlled low-pass filter to give the impression of swinging propeller blades.
+        </span>
+    </div>
+</div>
+    
+<div class="tracksection">
+    <h2>Footsteps</h2>
+    <p>There are two main materials the player walks on - a tiled surface, and a metal platform. To create immersion the footstep sound effect needs to change depending on what surface the player is walking on. These recordings are not final and are mainly for testing purposes. I recorded them using a field recorder in various places around my apartment building.</p>
+    <div class="track">
+        <h3>Tiles</h3>
+        <audio controls src="assets/reoweekTile%20(1).wav" type="audio/wav"></audio> 
+        <audio controls src="assets/reoweekTile%20(2).wav" type="audio/wav"></audio> 
+        <audio controls src="assets/reoweekTile%20(3).wav" type="audio/wav"></audio> 
+    </div>
+    <div class="track">
+        <h3>Metal Platform</h3>
+        <audio controls src="assets/reoweekMetal%20(1).wav" type="audio/wav"></audio> 
+        <audio controls src="assets/reoweekMetal%20(2).wav" type="audio/wav"></audio> 
+        <audio controls src="assets/reoweekMetal%20(3).wav" type="audio/wav"></audio> 
+    </div>
+</div>
+    
+<div class="tracksection">
+    <h2>Others</h2>
+    <p> </p>
+    <div class="track">
+        <h3>Teleporter</h3>
+        <audio controls>
+            <source src="assets/reoweekTeleportIn.wav" type="audio/wav">
+        </audio> 
+        <audio controls>
+            <source src="assets/reoweekTeleportOut.wav" type="audio/wav">
+        </audio> 
+        <span class="description">
+            <strong>Purpose: </strong>The player enters and exits levels via these futuristic teleportation pads. These sounds play upon teleporting into a level, and upon reaching the end teleporter, respectively. <br/>
+            <strong>Development: </strong>The exit teleportation sound is just the entry teleportation sound reversed. Yes I am a genius.
+        </span>
+    </div>
+    <div class="track">
+        <h3>Falling</h3>
+        <audio controls>
+            <source src="assets/reoweekFalling.wav" type="audio/wav">
+        </audio> 
+        <span class="description">
+            <strong>Purpose: </strong>This noise loops while the player is falling, becoming louder and higher pitched depending on their velocity.<br/>
+            <strong>Development: </strong>I began creating this sound by recording white noise from the Prologue. I then applied some EQing to filter out the highs and boost the lows, and some random frequency shifting to make it sound more natural.
+        </span>
     </div>
 </div>
 
