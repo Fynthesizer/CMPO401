@@ -11,8 +11,10 @@ url('assets/reoweekHeader.png');">
         <a href="index.html">Home</a>
         <h1>Reorientation Week</h1>
         <div class ="menu">
-            <p>Tracks</p>
+            <p>Audio</p>
             <p><a href = "reorientation-week-blog.html">Blog</a></p>
+            <p><a href = "reorientation-week-download.html">Download</a></p>
+            <p><a href = "reorientation-week-video.html">Video</a></p>
         </div>
     </div>
     <div class="headerRight">
@@ -46,56 +48,36 @@ url('assets/reoweekHeader.png');">
         <audio controls>
             <source src="assets/reoweekReorient.wav" type="audio/wav">
         </audio> 
-        <span class="description">
-            <strong>Purpose: </strong>Plays when the player successfully changes the direction of gravity. <br/>
-            <strong>Development: </strong>I wanted this sound effect to have a strong impact, to make the gravity switching mechanic feel empowering. To accomplish this I made the sound revolve around a massive sub drop. Just before the drop there is a short electronic charge up sound, which makes the drop feel more impactful. Then towards the end of the sound effect, there is a rippling noise wave which just adds a little bit more to the feeling of shifting the world around you.
-        </span>
     </div>
     <div class="track">
         <h3>Reset</h3>
         <audio controls>
             <source src="assets/reoweekReset.wav" type="audio/wav">
         </audio> 
-        <span class="description">
-            <strong>Purpose: </strong>Plays when gravity is returned to its normal state, either intentionally by the player, or as a result of the reorientation timer running out. <br/>
-            <strong>Development: </strong>This is very similar to the "charge up" part of the reorientation sound, although with the pitch descending instend of ascending to resprent a return to normality.
-        </span>
     </div>
     <div class="track">
-        <h3>Fail to Reorient</h3>
+        <h3>Fail</h3>
         <audio controls>
             <source src="assets/reoweekFail.wav" type="audio/wav">
         </audio> 
-        <span class="description">
-            <strong>Purpose: </strong>Plays when the player attempts to reorient, but is prevented from doing so due to a variety of possible circumstances. <br/>
-            <strong>Development: </strong>This is a pretty classic "error" sound effect, essentially just a low pitched beep-beep.
-        </span>
     </div>
     <div class="track">
         <h3>Timer</h3>
         <audio controls>
             <source src="assets/reoweekTimer.wav" type="audio/wav">
         </audio> 
-        <span class="description">
-            <strong>Purpose: </strong>The player can only keep gravity reoriented for a limited amount of time. This sound plays three times on the last three seconds before gravity will return to its normal state, reminding the player to get to a safe position. <br/>
-            <strong>Development: </strong>I wanted to make this sound simple and short, so as to not be too annoying or distracting.
-        </span>
     </div>
     <div class="track">
         <h3>Upgrade</h3>
         <audio controls src="assets/reoweekUpgrade%20(1).wav" type="audio/wav"></audio> 
         <audio controls src="assets/reoweekUpgrade%20(2).wav" type="audio/wav"></audio> 
         <audio controls src="assets/reoweekUpgrade%20(3).wav" type="audio/wav"></audio> 
-        <span class="description">
-            <strong>Purpose: </strong>Plays when the player collects an upgrade, increasing the maximum number of times they can sequentially alter gravity.<br/>
-            <strong>Development: </strong>These sounds are all arpeggiated seventh chords. Each time the player collects another upgrade, the melody moves up a third. This is to create a sense of progression.
-        </span>
     </div>
 </div>
     
 <div class="tracksection">
     <h2>Drones</h2>
-    <p>In the game there are flying drone enemies which will patrol their area until they detect the player, after which they will attack.</p>
+    <p>In the game there are flying drone enemies which will patrol their area until they detect the player, after which they will begin shooting laser beams at the player.</p>
     <div class="track">
         <h3>Chatting</h3>
         <audio controls>
@@ -119,36 +101,53 @@ url('assets/reoweekHeader.png');">
         <audio controls>
             <source src="assets/reoweekDroneChat%20(7).wav" type="audio/wav">
         </audio> 
-        <span class="description">
-            <strong>Purpose: </strong>While the drones are patrolling, they will talk to each other.<br/>
-            <strong>Development: </strong>I wanted to give these enemies some personality. To give the impression that they are having conversation, they will intermittently emit one of these seven "sentences". I created this talking synth effect by essentially just fiddling with the pitch wheel on the Prologue.
-        </span>
     </div>
     <div class="track">
-        <h3>Player Detected</h3>
+        <h3>Detect</h3>
         <audio controls>
             <source src="assets/reoweekDroneDetect.wav" type="audio/wav">
         </audio>
-        <span class="description">
-            <strong>Purpose: </strong>The drones emit this sound when they detect the player.<br/>
-            <strong>Development: </strong>I wanted this sound to be similar to their normal conversation, although notably more angry.
-        </span>
     </div>
     <div class="track">
         <h3>Hovering</h3>
         <audio controls>
             <source src="assets/reoweekDroneHover.wav" type="audio/wav">
         </audio> 
-        <span class="description">
-            <strong>Purpose: </strong>This is the sound of the drone's propellor oscilating.<br/>
-            <strong>Development: </strong>This is one of a few sounds that was not recorded from the Prologue. The original recording was an electric shaver. I took it into Ableton and applied an LFO controlled low-pass filter to give the impression of swinging propeller blades.
-        </span>
+    </div>
+    <div class="track">
+        <h3>Shoot</h3>
+        <audio controls>
+            <source src="assets/reoweekDroneShoot.wav" type="audio/wav">
+        </audio> 
+    </div>
+</div>
+    
+<div class="tracksection">
+    <h2>Ball</h2>
+    <p>Giant metal balls must often be pushed by the player into a receptacle. These sounds give the ball a sense of physicality.</p>
+    <div class="track">
+        <h3>Rolling</h3>
+        <audio controls>
+            <source src="assets/reoweekBallRoll.wav" type="audio/wav">
+        </audio> 
+    </div>
+    <div class="track">
+        <h3>Collision</h3>
+        <audio controls>
+            <source src="assets/reoweekBallCollide%20(1).wav" type="audio/wav">
+        </audio>
+        <audio controls>
+            <source src="assets/reoweekBallCollide%20(2).wav" type="audio/wav">
+        </audio>
+        <audio controls>
+            <source src="assets/reoweekBallCollide%20(3).wav" type="audio/wav">
+        </audio>
     </div>
 </div>
     
 <div class="tracksection">
     <h2>Footsteps</h2>
-    <p>There are two main materials the player walks on - a tiled surface, and a metal platform. To create immersion the footstep sound effect needs to change depending on what surface the player is walking on. These recordings are not final and are mainly for testing purposes. I recorded them using a field recorder in various places around my apartment building.</p>
+    <p>There are two main materials the player walks on - a tiled surface, and a metal platform. To create immersion the footstep sound effect needs to change depending on what surface the player is walking on.</p>
     <div class="track">
         <h3>Tiles</h3>
         <audio controls src="assets/reoweekTile%20(1).wav" type="audio/wav"></audio> 
@@ -164,7 +163,7 @@ url('assets/reoweekHeader.png');">
 </div>
     
 <div class="tracksection">
-    <h2>Others</h2>
+    <h2>Miscellaneous</h2>
     <p> </p>
     <div class="track">
         <h3>Teleporter</h3>
@@ -174,20 +173,52 @@ url('assets/reoweekHeader.png');">
         <audio controls>
             <source src="assets/reoweekTeleportOut.wav" type="audio/wav">
         </audio> 
-        <span class="description">
-            <strong>Purpose: </strong>The player enters and exits levels via these futuristic teleportation pads. These sounds play upon teleporting into a level, and upon reaching the end teleporter, respectively. <br/>
-            <strong>Development: </strong>The exit teleportation sound is just the entry teleportation sound reversed. Yes I am a genius.
-        </span>
+        <p>The player enters and exits levels via these futuristic teleportation pads. These sounds play upon teleporting into a level, and upon reaching the end teleporter, respectively.</p>
     </div>
     <div class="track">
         <h3>Falling</h3>
         <audio controls>
             <source src="assets/reoweekFalling.wav" type="audio/wav">
         </audio> 
-        <span class="description">
-            <strong>Purpose: </strong>This noise loops while the player is falling, becoming louder and higher pitched depending on their velocity.<br/>
-            <strong>Development: </strong>I began creating this sound by recording white noise from the Prologue. I then applied some EQing to filter out the highs and boost the lows, and some random frequency shifting to make it sound more natural.
-        </span>
+        <p>This noise loops while the player is falling, becoming louder and higher pitched depending on their velocity.</p>
+    </div>
+    <div class="track">
+        <h3>Lasers</h3>
+        <audio controls>
+            <source src="assets/reoweekLaserHum.wav" type="audio/wav">
+        </audio> 
+        <p>Laser walls block the player at various stages in the game. The lasers constantly emit this noise.</p>
+    </div>
+    <div class="track">
+        <h3>Button</h3>
+        <audio controls>
+            <source src="assets/reoweekButton.wav" type="audio/wav">
+        </audio> 
+        <p>The player can interact with buttons in order to activate or deactivate various devices in the game.</p>
+    </div>
+    <div class="track">
+        <h3>Receptacle</h3>
+        <audio controls>
+            <source src="assets/reoweekActivate.wav" type="audio/wav">
+        </audio> 
+        <audio controls>
+            <source src="assets/reoweekDeactivate.wav" type="audio/wav">
+        </audio> 
+        <p>The player often must push balls into a receptacle in order to activate or deactivate various devices, similar to the button. </p>
+    </div>
+    <div class="track">
+        <h3>Moving Platform</h3>
+        <audio controls>
+            <source src="assets/reoweekPlatform.wav" type="audio/wav">
+        </audio> 
+        <p>Moving platforms are used to traverse large gaps. While they are moving they emit this sound.</p>
+    </div>
+    <div class="track">
+        <h3>Death</h3>
+        <audio controls>
+            <source src="assets/reoweekDeath.wav" type="audio/wav">
+        </audio> 
+        <p>When the player dies this sound is played, accompanied by the music slowing down.</p>
     </div>
 </div>
 

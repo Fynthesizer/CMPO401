@@ -24,11 +24,16 @@ h1 {
 
 h2 {
     color: white;
+    font-size: 26px;
 }
 
 h3 {
-    font-size:15px;
+    font-size:18px;
     color: white;
+}
+
+.title {
+    text-align: center;
 }
 
 .post {
@@ -102,13 +107,9 @@ iframe {
 }
 
 .banner {
-    border-style: solid;
-    border-width: 5px;
-    border-color: #263033;
+    
     position: relative;
     flex: 33.33%;
-    padding: 10px;
-    margin-right: 20px;
     height: 400px;
     background-size: 950px;
     background-position:center;
@@ -203,3 +204,11 @@ iframe {
     color: lightgrey;
 }
 
+.downloads {
+    text-align: center;
+}
+
+.downloads h2{
+    display:inline-block;
+    padding: 0px 50px 0px 50px;
+}

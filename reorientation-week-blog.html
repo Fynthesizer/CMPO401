@@ -11,8 +11,10 @@ url('assets/reoweekHeader.png'); ">
         <a href="index.html">Home</a>
         <h1>Reorientation Week</h1>
         <div class ="menu">
-            <p><a href = "reorientation-week-tracks.html">Tracks</a></p>
+            <p><a href = "reorientation-week-tracks.html">Audio</a></p>
             <p>Blog</p>
+            <p><a href = "reorientation-week-download.html">Download</a></p>
+            <p><a href = "reorientation-week-video.html">Video</a></p>
         </div>
     </div>
     <div class="headerRight">
@@ -25,6 +27,187 @@ url('assets/reoweekHeader.png'); ">
 <div class="content">
 
 <a href="https://www.tumblr.com/blog/finnma-mddn343">Original Development Blog</a> <br>
+    
+<div class="post">
+    <h5>June 24, 2019</h5>
+    <h2>Wrapping Up</h2>
+    <p>When I started working on this portfolio, I had anticipated Reorientation Week to take up the same amount of work as the two or three other games I was working on. In the end, this game ended up being a major focus of the project, as there was just so much I wanted to do with it.</p>
+        <p>My initial idea for this game's soundtrack was to create all the audio assets using just my Korg synthesizer. I eventually ended up deviating slightly and experimenting with different recording methods. While most of the sounds were recorded from the synthesizer, resulting in a unique science fiction atmosphere, I found that some of the more physical interactions in the game were better suited to traditionally recorded sound effects.</p>
+    <p>Through working on this game I learnt a lot more than I expected to about sound design, reactive music, and audio programming. I'm really happy with how the final audio-visual aspect of the game turned out, although there are still things that I feel could be polished and improved on.</p>
+    
+</div>
+<div class="post">
+    <h5>June 20, 2019</h5>
+    <h2>Demo Level</h2>
+    <p>After creating sound effects for each of the objects and mechanics in the game, I found that the game didn't really have any levels which sufficiently put all of the sound design on display. Reluctantly I embarked on the task of creating a full demo level which incorporated all of the gameplay elements and sound design.</p>
+    <p>I decided to start the player without the gravity gun, and only have the music start playing once they have picked up the gun later on in the level. This allows the ambience and sound design to have some time to shine. Once they have picked up the gun, they can only change the direction of gravity once before resetting. This means they can only hear the first two layers of music. Later on in the level however, the player will pick up upgrades, eventually allowing them to reorient up to 4 times, and thus to hear the full piece of music with all tracks. This means that the music becomes more intense as the player progresses through the level and becomes more competent with the game's mechanics.</p>
+    <iframe width="560" height="560" src="https://www.youtube.com/embed/mlO7U8-xBF0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>The full demo level is available for download <a href = "reorientation-week-download.html">here.</a></p>
+</div>
+    
+<div class="post">
+    <h5>June 14, 2019</h5>
+    <h2>Drones</h2>
+    <p>The game includes one enemy, a flying drone that shoots laser beams at the player. To bring life to these characters I've created four different types of sound effects.</p>
+    <p>The first sound is this noise loop that they constantly emit. I started by recording an electric shaver. In Ableton I then applied an LFO controlled low pass filter, which helps give the impression of spinning propellor blades.</p>
+    <audio controls>
+        <source src="assets/reoweekDroneHover.wav" type="audio/wav">
+    </audio>
+    <p>I wanted the drones to have their own personality, similar to the <a href = "https://www.youtube.com/watch?v=9NBDulvHYr8">turrets from Portal</a>. To achieve this I made them "chat" to each other when they are just flying around, before detecting the player. At random intervals they will emit one of these seven sound effects. These were recorded from the synthesizer, with me playing around with the pitch wheel to give the impression of speech.</p>
+    <audio controls>
+        <source src="assets/reoweekDroneChat%20(1).wav" type="audio/wav">
+    </audio>
+    <audio controls>
+        <source src="assets/reoweekDroneChat%20(2).wav" type="audio/wav">
+    </audio>
+    <audio controls>
+        <source src="assets/reoweekDroneChat%20(3).wav" type="audio/wav">
+    </audio>
+    <audio controls>
+        <source src="assets/reoweekDroneChat%20(4).wav" type="audio/wav">
+    </audio>
+    <audio controls>
+        <source src="assets/reoweekDroneChat%20(5).wav" type="audio/wav">
+    </audio>
+    <audio controls>
+        <source src="assets/reoweekDroneChat%20(6).wav" type="audio/wav">
+    </audio>
+    <audio controls>
+        <source src="assets/reoweekDroneChat%20(7).wav" type="audio/wav">
+    </audio>
+    <p>When the player comes within a certain distance of the drones they will be detected. The drone emits this sound upon detecting the player. It's similar to the chat sound effects although notably more angry sounding.</p>
+    <audio controls>
+        <source src="assets/reoweekDroneDetect.wav" type="audio/wav">
+    </audio>
+    <p>The drones then start shooting lasers beams at the player, accompanied by this sound effect, basically just a sine wave quickly descending in pitch. </p>
+    <audio controls>
+        <source src="assets/reoweekDroneShoot.wav" type="audio/wav">
+    </audio>
+</div>
+    
+<div class="post">
+    <h5>June 11, 2019</h5>
+    <h2>Moving Platform</h2>
+    <p>The buttons and receptacles can also activate these floating platforms, which help the player to traverse large gaps safely. When the platform is moving it emits this sound. First I recorded a simple arpeggiated note from the synthesizer. When I put this into the game however it didn't seem to sound right. I then put a frequency shifter effect on the clip, which gave the sound a lot more of the mystical alien technology feel I was going for. </p>
+    <audio controls>
+        <source src="assets/reoweekPlatform.wav" type="audio/wav">
+    </audio> 
+</div>
+    
+<div class="post">
+    <h5>June 7, 2019</h5>
+    <h2>Ball</h2>
+    <p>In the last post I mentioned the metal balls that the player must push into a receptacle. I wanted this ball to feel like a physical, tangible object. I looked around my flat for a large metal object that I could record rolling and banging into things and what I found was a rubbish bin. Even though shape-wise it is quite difficult to the virtual object it is representing, the sounds don't seem mismatched when playing the game. I've learnt through the course of this project that the human ear isn't that difficult to fool. When we see something happening on screen and hear a sound accompanying it, our mind associates the two things pretty easily.</p>
+    <p>When the ball is being pushed around, this looping noise rises in volume depending on the speed of the ball.</p>
+    <audio controls>
+        <source src="assets/reoweekBallRoll.wav" type="audio/wav">
+    </audio> 
+    <p>When the ball hits a surface with enough velocity, one of these sounds will be played at random, with its volume being controlled by the force of the collision. I always like to take a few recordings for sounds like this, giving the impression that each collision is different, and that you're not just hearing the same audio sample each time.</p>
+    <audio controls>
+        <source src="assets/reoweekBallCollide%20(1).wav" type="audio/wav">
+    </audio> 
+    <audio controls>
+        <source src="assets/reoweekBallCollide%20(2).wav" type="audio/wav">
+    </audio> 
+    <audio controls>
+        <source src="assets/reoweekBallCollide%20(3).wav" type="audio/wav">
+    </audio> 
+</div>
+    
+<div class="post">
+    <h5>June 5, 2019</h5>
+    <h2>Button and Receptacle Sounds</h2>
+    <p>There are two possible ways to deactivate the laser walls described in the last post. Often there will be a button somewhere which disables the lasers. I went through many iterations of this sound. I wanted it to sound satisfying enough to let the player know they are making progress, while also being short and to the point. Melodically the sound is just moving from the root to the fifth. Perfect intervals are pretty common in "positive reinforcement sound effects". For example, these classic sounds from <a href = "https://www.youtube.com/watch?v=qfx6yf8pux4">Mario</a> and <a href = "https://www.youtube.com/watch?v=9HZ-kj3mP5Q">Zelda</a>.</p>
+    <audio controls>
+        <source src="assets/reoweekButton.wav" type="audio/wav">
+    </audio> 
+    <p>The second way to disable a laser wall is by pushing a metal ball into a receptacle. Once the ball falls into the receptacle it will disable the laser wall. If it falls out however, the laser wall will be reactivated. I went through many iterations of these sounds, but eventually I ended up going back to the sound that I had already made last year since I think they work really well. The deactivation sound is of course just the activation sound reversed, similar to the teleportation sound effect.</p>
+    <audio controls>
+        <source src="assets/reoweekActivate.wav" type="audio/wav">
+    </audio> 
+    <audio controls>
+        <source src="assets/reoweekDeactivate.wav" type="audio/wav">
+    </audio> 
+</div>
+    
+<div class="post">
+    <h5>June 2, 2019</h5>
+    <h2>Laser Hum</h2>
+    <p>Laser walls block the player's progress at various points in the game. If the player makes contact with them they will instantly die. I wanted to have the lasers emit a constant buzzing sound to reinforce the sense that they are active and dangerous to the player.</p>
+    <p>This sound wasn't recorded from the synthesizer or with a microphone. I actually unplugged the end of the lead from my synthesizer and held it near a power board to record the electrical interference. I then applied some EQ and chorus to get this sound.</p>
+    <audio controls>
+        <source src="assets/reoweekLaserHum.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio> 
+</div>
+    
+<div class="post">
+    <h5>May 25, 2019</h5>
+    <h2>Teleporters</h2>
+    <p>The player enters and exits levels via teleportation pads. The teleportation pads play a short animation when the player is teleporting in or out of a level, which I wanted to have accompanyed by a sound effect. After recording the entry teleporter sound effect, I simply reversed this to get the exit teleporter sound effect.</p>
+    <audio controls>
+        <source src="assets/reoweekTeleportIn.wav" type="audio/wav">
+    </audio> 
+    <audio controls>
+        <source src="assets/reoweekTeleportOut.wav" type="audio/wav">
+    </audio> 
+</div>
+    
+<div class="post">
+    <h5>May 22, 2019</h5>
+    <h2>Footsteps</h2>
+        <p>There are two main surfaces that the player walks on in the game. The first being a tiled floors and walls, the second being metal bridges. To assist the immersion and atmosphere of the game I wanted each of these surfaces to have its own set of footstep sound effects for when they are being walked on. Fortunately, I found that my apartment building has the perfect places to record both sets of footstep sounds. At the risk of mild embarassment, I recorded myself stomping about on both of these surfaces.</p> 
+        <p>Unfortunately, both areas presented some problematic outside noise. In the tiled foyer area, a fan could be heard in the background. The steel grating was outside so the sounds of cars and wind presented a problem, as well as some strange electrical interference. I found that through some precise EQing and chopping I was able to salvage somewhat clean footstep sounds from the recording, although this has taught me a lot about the difficulties of recording sound effects in an uncontrolled environment.</p>
+        <h3>Tiles</h3>
+        <audio controls src="assets/reoweekTile%20(1).wav" type="audio/wav"></audio> 
+        <audio controls src="assets/reoweekTile%20(2).wav" type="audio/wav"></audio> 
+        <audio controls src="assets/reoweekTile%20(3).wav" type="audio/wav"></audio> 
+        <h3>Metal Platform</h3>
+        <audio controls src="assets/reoweekMetal%20(1).wav" type="audio/wav"></audio> 
+        <audio controls src="assets/reoweekMetal%20(2).wav" type="audio/wav"></audio> 
+        <audio controls src="assets/reoweekMetal%20(3).wav" type="audio/wav"></audio> 
+    <p>I've also used these recording to create a "landing" sound effect for when the player lands after a jump. To do this I simply programmed two of the clips to play in quick succession, simulating the sound of both feet hitting the floor.</p>
+</div>
+    
+<div class="post">
+    <h5>May 15, 2019</h5>
+    <h2>Finished Dynamic Music Track</h2>
+    <p>Finally I have created a finished piece of music for Reorientation Week. Initially, I wanted to have a few different tracks for different levels. However I later decided that instead of having two layers, one for normal gravity and one for altered gravity, I wanted the music to have several layers, with one being added each time that the player sequentially alters gravity. This leads to the music becoming more intense throughout the course of a long platforming section. After creating one four minute piece of music with dynamic layering, I felt that it was going to be too much of an undertaking to do at least two more.</p>
+    <p>The soundtrack for Reorientation Week is an experiment is "reactive music" - music which dynamically responds to the players actions in game. Like most of the sound effects, all instrumentation in the music was recorded from my Korg Prologue analog synthesizer. I was very much inspired by synthwave, complimenting the high tech futuristic aesthetic of the game. I also wanted the music to create a sense of mystery, as I think the game has a very mysterious and otherwordly atmosphere.</p>
+    <p>At the start of a level, the music is just a simple repeating synth bass note, along with some occasional spooky synth ambience. Each time the player sequentially changes the direction of gravity however, additional instruments are layered on, ramping up the intensity of the music and creating the feeling of entering an altered state of reality. Initially the player can only change the direction of gravity once before resetting it back to normal. However they can collect upgrades which allow them to reorient gravity more times before resetting, thus meaning that they also gain access to more of the full piece of music. Since gravity can only remain altered for a short period of time however, and since the full track is around 4 minutes long, the player can still only hear fragments of the full piece of music even after collecting all 3 upgrades.</p>
+    <ul>
+    <li>On the first reorientation, an arpeggiated synth is introduced, harmonising over top of the static bass line. Various different harmonies are explored throughout the track. To create a sense of disorientation, I have these arpeggios panning from left to right. </li>
+    <li>On the second reorientation, some fast-paced drums are introduced, heightening the intensity of the music. </li>
+    <li>On the third reorientation, a massive synth pad comes in, doubling up the harmonies created by the arpeggios. Also, the synth bass line starts following the harmony instead of staying on one note. <strong>There are some melodic motifs played by the pad which are hinted at in the "natural gravity" track.</strong> </li>
+    <li>On the fourth and final possible reorientation, some high end percussion comes in, just adding a little bit more intensity.</li>
+    </ul>
+    <p>Since the dynamics of the music are controlled by the player's actions, each version of the music has to be pretty dynamically flat. If there was a part in the full version of the track where the dynamics die down, then the music might not ramp up as much in intensity depending on where in the track the player reorients gravity.</p>
+    <iframe width="100%" height="300" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/779443218&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+</div>
+    
+<div class="post">
+    <h5>May 10, 2019</h5>
+    <h2>More Gravity Gun Sounds</h2>
+    <p>The player can collect upgrades which increase the maximum number of times they are able to sequentially reorient gravity before a reset. The first time the player collects an upgrade they will hear this sound effect. The sound uses notes from the minor 7 chord, with the root note being in tune with the music.</p>
+    <audio controls>
+        <source src="assets/reoweekUpgrade%20(1).wav" type="audio/wav">
+    </audio> 
+    <p>I wanted to create a continuous sense of progression for each upgrade that the player acquires. To achieve this, the subsequent upgrade sounds are each moved up a third from the previous one.</p>
+    <audio controls>
+        <source src="assets/reoweekUpgrade%20(2).wav" type="audio/wav">
+    </audio> 
+    <audio controls>
+        <source src="assets/reoweekUpgrade%20(3).wav" type="audio/wav">
+    </audio> 
+    <audio controls>
+        <source src="assets/reoweekUpgrade%20(4).wav" type="audio/wav">
+    </audio> 
+    <p>After the player has changed gravity, they are under a 10 second time limit before gravity reverts back to normal. I wanted to emphasise the sense of time running out, reminding the player that if they are in a precarious situation they need to get to safety quickly. This sound effect will play on each of the last three seconds before time runs out.</p>
+    <audio controls>
+        <source src="assets/reoweekTimer.wav" type="audio/wav">
+    </audio> 
+</div>
+    
 
 <div class="post">
     <h5>May 3, 2019</h5>
@@ -58,7 +241,7 @@ url('assets/reoweekHeader.png'); ">
     <h5>May 3, 2019</h5>
     <h2>Migration to FMOD</h2>
     <p>I've started moving all the sound and music handling for this project to FMOD Studio. After beginning to learn how the program works I've found that it offers me a lot more freedom and control over in-game audio. Although a lot of what it offers is theoretically do-able with Unity's audio engine, FMOD makes it a lot easier and more inuitive to experiment with sound. I find that I'm spending a lot less time rigorously coding audio events now.</p>
-    <p>One thing I experimented with in FMOD was programming the music to slow right down after the player dies. I really like this effect and I think it goes well with the tone of the game.</p>
+    <p>One thing I experimented with in FMOD was programming the music to slow right down after the player dies. I really like this effect and I think it goes well with the synth theme of the game, kind of sounding like a record player dying.</p>
 </div>
     
 <div class="post">
